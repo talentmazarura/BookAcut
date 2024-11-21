@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #h1{
+            text-align: center;
+            font-weight: bolder;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">GetCut</a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1 id="h1">Click on picture to book a cut with us!!</h1>
+        </p>
+    </section>
+    <h1>Hairsyles</h1>
+    <div class="gallery">
+        <img src="images/2.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/3.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/4.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/5.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/6.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/7.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/8.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        <img src="images/h1.png" alt="Hairstyle 1" class="gallery-image" id="image1">
+        
+    </div>
+    <div id="order-form" class="form-container">
+        <form action="#" method="post" class="order-form">
+            <h2>Order Form</h2>
+            <button type="button" class="close-button" id="close-form">&times;</button>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="product">Selected Hairstyle:</label>
+            <input type="text" id="selected-product" name="product" readonly>
+    
+            <label for="quality">Select Quality:</label>
+            <input type="number" id="quality" name="quality" min="1" required>
+    
+            <button type="submit">Place Order</button>
+        </form>
+      </div>
+<script src="j1.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">GetCut</a>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>Contact Page</h1>
+        <p>
+            Whether you have questions, feedback, or need assistance, our team is here to help
+            . Please fill out the form below or reach out to us through any of the methods listed.
+        </p>
+    </section>
+
+    <div class="ccontainer">
+        <h2>Submit Your Review or Complaint</h2>
+        <form action="/submit-review" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="type">Type of Submission:</label>
+            <select id="type" name="type" required>
+                <option value="review">Review</option>
+                <option value="complaint">Complaint</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <aside class="aside">
+        <h3>Reach Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/talentmazarura/?locale=en_US%2Cen_GB">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Whatsapp</a></li>
+        </ul>
+    </aside>
+
+</body>
+</html>

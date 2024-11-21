@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+
+        }
+        main{
+            padding: 20px;
+            text-align: center;
+
+        }
+        .order-form{
+            position: relative;
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+            width: 300px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        .open-button{
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        .open-button:hover{
+            background: #555;
+        }
+        .form-container{
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+        }
+        
+        label{
+            margin: 10px 0 5px;
+
+        }
+        input,select{
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button{
+            padding: 10px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #555;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            background:#333;
+            color: white;
+        }
+        .close-button{
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            right: 15px;
+            font-size: 20px;
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Order yout Hairstyle</h1>
+    </header>
+    <main>
+        <div id="order-form" class="form-container">
+        <form action="#" method="post" class="order-form">
+            <h2>Order form</h2>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <label for="hairstyle">Select Hairstyle number: </label>
+            <select id="hairstyle" name="hairstyle">
+                <option value="">---please choose an option--</option>
+                <option value="1">Hairstyle 1</option>
+                <option value="2">Hairstyle 2</option>
+                <option value="3">Hairstyle 3</option>
+                <option value="4">Hairstyle 4</option>
+                <option value="5">Hairstyle 5</option>
+                <option value="6">Hairstyle 6</option>
+                <option value="7">Hairstyle 7</option>
+            </select>
+            <label for="CutQuality">Quality Prefered: </label>
+            <input type="number" id="CutQuality" name="CutQuality" min="1" required>
+            <label for="payment">Payment Method</label>
+            <select id="payment" name="payment" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="pay-pal">Pay Pal</option>
+                <option value="bank">Bank Transfer</option>
+
+            </select>
+            <button type="submit">Place Order</button>
+           
+        </form>
+        </div>
+    </main>
+<footer>
+    <p>&copy;2024 Book a Cut</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
